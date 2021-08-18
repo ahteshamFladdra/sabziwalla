@@ -16,24 +16,26 @@ class HomeHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Good Morning!",
-                style: Theme.of(context).textTheme.caption,
-              ),
-              Text(
-                "Caesar Rincon",
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle1!
-                    .copyWith(color: Colors.black54),
-              )
-            ],
+          SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Good Morning!",
+                  style: Theme.of(context).textTheme.caption,
+                ),
+                Text(
+                  "Select your Needs",
+                  style: Theme.of(context)
+                      .textTheme
+                      .subtitle1!
+                      .copyWith(color: Colors.black54),
+                )
+              ],
+            ),
           ),
           CircleAvatar(
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.black45,
             backgroundImage: AssetImage("assets/images/profile.png"),
           )
         ],

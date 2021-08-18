@@ -13,7 +13,7 @@ class CartCounter extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Color(0xFFF6F6F6),
-        borderRadius: const BorderRadius.all(Radius.circular(40)),
+        // borderRadius: const BorderRadius.all(Radius.circular(20)),
       ),
       child: Row(
         children: [
@@ -23,12 +23,10 @@ class CartCounter extends StatelessWidget {
             press: () {},
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: defaultPadding / 4),
+            padding: const EdgeInsets.symmetric(horizontal: defaultPadding / 4),
             child: Text(
               "1",
-              style: TextStyle(
-                  fontSize: 14, fontWeight: FontWeight.w800),
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
             ),
           ),
           RoundIconBtn(

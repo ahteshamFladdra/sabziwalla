@@ -25,7 +25,7 @@ class CartDetailsView extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {},
-              child: Text("Next - \$30"),
+              child: Text("Next - \u20b9"),
             ),
           )
         ],
